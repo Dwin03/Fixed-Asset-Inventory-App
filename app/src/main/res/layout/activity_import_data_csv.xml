@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Import_Data_CSV">
+
+    <ImageButton
+        android:id="@+id/importDataToDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="back button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/importLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Import CSV Data"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/csvProcessHolder"
+        android:layout_width="303dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/importLabel"
+        app:layout_constraintStart_toStartOf="@+id/importLabel"
+        app:layout_constraintTop_toBottomOf="@+id/importLabel">
+
+        <TextView
+            android:id="@+id/fileNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selectFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Select CSV File"
+        android:backgroundTint="@color/darkBlue"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/csvProcessHolder"
+        app:layout_constraintStart_toStartOf="@+id/csvProcessHolder"
+        app:layout_constraintTop_toBottomOf="@+id/csvProcessHolder" />
+
+    <Button
+        android:id="@+id/importButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Import"
+        android:backgroundTint="@color/darkBlue"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/selectFileButton"
+        app:layout_constraintStart_toStartOf="@+id/selectFileButton"
+        app:layout_constraintTop_toBottomOf="@+id/selectFileButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

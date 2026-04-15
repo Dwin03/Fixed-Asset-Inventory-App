@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dirtyWhite"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/regsiterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Register Account"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUserReg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type here . . ."
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/regsiterLabel"
+        app:layout_constraintStart_toStartOf="@+id/regsiterLabel"
+        app:layout_constraintTop_toBottomOf="@+id/regsiterLabel" />
+
+
+    <EditText
+        android:id="@+id/editTextPassReg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type here . . ."
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUserReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextUserReg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserReg" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type here . . ."
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassReg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassReg" />
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/editTextConfirmPass"
+        app:layout_constraintStart_toStartOf="@+id/editTextConfirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPass" />
+
+    <ImageButton
+        android:id="@+id/registerToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextUserReg" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassReg" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        app:layout_constraintBottom_toTopOf="@+id/editTextConfirmPass"
+        app:layout_constraintStart_toStartOf="@+id/editTextConfirmPass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Add_Assets_Page">
+
+    <ImageButton
+        android:id="@+id/addAssetToDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="back button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/addAssetsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Add Assets"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addAssetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type here . . . "
+        android:textColor="@color/black"
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/addAssetsLabel"
+        app:layout_constraintStart_toStartOf="@+id/addAssetsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/addAssetsLabel" />
+
+    <EditText
+        android:id="@+id/addDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type here . . . "
+        android:textColor="@color/black"
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/addAssetNumber"
+        app:layout_constraintStart_toStartOf="@+id/addAssetNumber"
+        app:layout_constraintTop_toBottomOf="@+id/addAssetNumber" />
+
+    <EditText
+        android:id="@+id/addLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type here . . . "
+        android:textColor="@color/black"
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/addDescription"
+        app:layout_constraintStart_toStartOf="@+id/addDescription"
+        app:layout_constraintTop_toBottomOf="@+id/addDescription" />
+
+    <EditText
+        android:id="@+id/addRemarks"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Type here . . . "
+        android:textColor="@color/black"
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/addLocation"
+        app:layout_constraintStart_toStartOf="@+id/addLocation"
+        app:layout_constraintTop_toBottomOf="@+id/addLocation" />
+
+    <Button
+        android:id="@+id/saveAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/addRemarks"
+        app:layout_constraintStart_toStartOf="@+id/addRemarks"
+        app:layout_constraintTop_toBottomOf="@+id/addRemarks" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asset Number"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/addAssetNumber"
+        app:layout_constraintStart_toStartOf="@+id/addAssetNumber" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/addDescription"
+        app:layout_constraintStart_toStartOf="@+id/addDescription" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/addLocation"
+        app:layout_constraintStart_toStartOf="@+id/addLocation" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remarks"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/addRemarks"
+        app:layout_constraintStart_toStartOf="@+id/addRemarks" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

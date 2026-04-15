@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dirtyWhite"
+    tools:context=".Dashboard">
+
+
+    <TextView
+        android:id="@+id/dashboardLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Inventory Dashboard"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSearchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Search Assets . . ."
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="@drawable/textfiled_round_corners"
+        app:layout_constraintEnd_toEndOf="@+id/dashboardLabel"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="@+id/dashboardLabel"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardLabel" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSearchBar"
+        app:layout_constraintStart_toStartOf="@+id/editTextSearchBar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearchBar" />
+
+    <Button
+        android:id="@+id/manageAssetButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Manage Assets"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/searchButton"
+        app:layout_constraintStart_toStartOf="@+id/searchButton"
+        app:layout_constraintTop_toBottomOf="@+id/searchButton" />
+
+    <Button
+        android:id="@+id/importButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Import Data"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/manageAssetButton"
+        app:layout_constraintStart_toStartOf="@+id/manageAssetButton"
+        app:layout_constraintTop_toBottomOf="@+id/manageAssetButton" />
+
+    <Button
+        android:id="@+id/exportButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Export Report"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/importButton"
+        app:layout_constraintStart_toStartOf="@+id/importButton"
+        app:layout_constraintTop_toBottomOf="@+id/importButton" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkBlue"
+        app:layout_constraintEnd_toEndOf="@+id/exportButton"
+        app:layout_constraintStart_toStartOf="@+id/exportButton"
+        app:layout_constraintTop_toBottomOf="@+id/exportButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
