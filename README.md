@@ -53,9 +53,3 @@ A system designed to manage and track fixed assets such as equipment, tools, and
 
 **Edwin Just B. Teoxon**
 Programmer / Developer
-
-
-
-This is an application meant as an exam to test database knowledge with the use of CSV File.
-
-This application is able to import, export, and read CSV files. It is also able to use room database for editing, adding, and deleting data. CSV files cant be edited so it only use the imported CSV files to read and copy to the room database. When exporting it will copy the current data and insert it in a csv file for export.
